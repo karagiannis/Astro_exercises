@@ -1,0 +1,120 @@
+﻿%\documentclass[twocolumn]{article}
+\documentclass[./exercises.tex]{subfiles}
+\begin{document}
+
+\textit{\textbf{Stone Edge observatoriet  } }
+\begin{enumerate}
+\item Skriv en beskrivning vad ni gjorde/vad som gjordes på observationerna
+ och vilka resultat ni lyckades få ihop på max en sida.
+Skriv också om problem och svårigheter med riktiga astronomiska observationer. \\
+
+Stone Edge obsevatoriet finns norr om San Fransisco och ägs av en privatperson som äger
+en vingård i anslutning, dock drivs det av Chicago universitetet.
+Genomgång av Anna Arnadottir om hur hur man styr teleskopet såsom registrerad användare.
+
+Telskopet styrs via kommunikationsprogrammet Slack.
+Teleskopet låses före egen användning genom kommandot \verb+\lock+. Telskopdomen öppnas genom kommandot
+\verb+\crack+. Tillgängliga kommandon listas med \verb+\help+.
+Astronomiska objekt kan sökas i teleskopets databas t.ex. avseende M31 (Andromeda galaxen) genom kommandot
+\verb+\find M31+. Objektet listas med ett nummer t.ex 1. Kommandot för att
+peka teleskopet mot M31 blir då \verb+\point 1+. Man kan även peka teleskopet med
+\verb+\point <rektascension> <deklination>+
+Telskopet kan även centrera objektet i bilden med kommandot \verb+\pinpoint+.
+Två preview bilder tas, den ena före korrigeringen den andra efter koorigeringen,
+ som inte kommer att sparas.
+ 
+Bilder tas med kommandot
+\verb+\image <exponeringstid i selkunder>+\\
+\verb+<pixelreduktion> <filter typ>+\\
+\verb+<antal bilder>+. Pixelreduktionen anges med ett s.k. bind-tal. Om bind är 1 är varje pixel en data punkt och bilden blir
+4K stor, om bind är 2 så kombineras två pixlar såsom en datapunkt. Försiktighet iakttages vid
+inställningen av exponeringstiden då för lång exponeringstid
+vid fotografering av ljusstarkt objekt kan skada CMOS-kameran.
+
+Avseende filtertyper så finns olika konventioner för benämning av
+våglängdsområdet varav en filtertyp kallas Sloan-filter som även kallas
+SDSS-filter. Tillgängliga bandpass-filter är ``O3'' för ozonets emitterade våglängder,``g-band''
+för våglängdsområdet ca $400$nm- till $530$nm,``r-band'' från ca $570$nm till $680$nm, ``'i-band'' från
+ca $700$ nm till $830$nm (rött och infrarött), ``sii'' där våglängsområdet ej uppfattades, ``'clear'' vilket
+betyder att inget filter kopplas in och slutligen ``'h-alpha''. H-alpha filtret är ett smalt bandpassfilter
+på 654 nm och är en av övergångarna i Väte-atomens Balmer-serie, vilket tydligen skall vara fördelaktigt om man tittar på nebulosor.
+
+Signalbehandling\\
+Kamerans egenbrus (värmebrus) kan subtraheras bort om man tar en s.k. dark-bild. En bild tas då utan att öppna kamerans iris.
+För att ta reda på variationer i hur enskilda pixlar förstärker ljuset för att kunna kompensera för detta tar man s.k.
+flat-bilder mot en ljusblå himmel. Detta skall göras för varje bild.
+
+För att kontrollera hur mycket brus pixelavläsningselektroniken tillför så att man kan kompensera för detta
+så tas s.k. ``bias-bilder''.
+
+Man kan jämföra den egna bilden med databasens bild genom kommandot \verb+\where+.
+Det är bättre att ta många bilder med en sammanlagd totaltid än att ta hela bilden direkt då man 
+fjärrstyr ett teleskop därför att man kan förlora internetuppkopplingen.
+
+Fotografierna filer är av typen .fits och kan endast ses med speciella programvaror exemplevis
+``Subaru''.
+Vid observationen den 29/9-2022 så observerades bl.a. Andromeda, Jupiter, Hjärtnebulosan, Hästhuvudnebulosan.
+
+
+
+
+
+\end{enumerate}
+
+
+%\underbrace{}
+
+% \hspace{1em}
+
+%\begin{enumerate}[label=(\alph*)]
+%\end{enumerate}
+
+%$$
+%  A = 
+%  \begin{bmatrix}
+%    1 & 0  & 2i\\
+%    2i & 0 &  -4\\
+%    -i &  0 & -2i\\
+%  \end{bmatrix}
+%$$
+
+%\begin{flalign*}
+%  A = 
+%  \begin{bmatrix}
+%    1 & 0  & 2i\\
+%    2i & 0 &  -4\\
+%    -i &  0 & -2i\\
+%  \end{bmatrix}
+%\end{flalign*}
+
+
+%\begin{flalign*}
+%\psi(x) = \begin{cases} Ae^{ikx}+Be^{-ikx} &\ \  x<-a \\
+%                        Ce^{\kappa x}+De^{-\kappa x} &\ \ -a < x < a\\
+%						Fe^{ikx} & \ \ x>a
+%       \end{cases}
+%\end{flalign*}
+%[width=80mm,scale=0.7]
+%\begin{figure}[H]
+%  \includegraphics[width=\linewidth]{odd_finite.eps}
+%  \caption{$z_0=0.1\pi,0.5\pi, 3\pi,7\pi$}
+%  \label{fig4}
+%\end{figure}
+\end{document}
+
+
+
+
+
+
+
+
+
+
+
+
+                                     
+                                     
+
+
+

@@ -1,0 +1,349 @@
+﻿%\documentclass[twocolumn]{article}
+\documentclass[./exercises.tex]{subfiles}
+\begin{document}
+
+\textit{\textbf{Inlämning 2  } }
+\begin{enumerate}
+\item \textit{3.4. At approximately what time does the Moon rise when it is
+a) a new moon}\\
+
+Enligt internet-sajt\footnote{\url{https://www.almanac.com/when-will-moon-rise-tonight}}
+så stiger nymånen nära soluppgången.Nymånen är aldrig synlig förutom vid
+solförmörkelse.
+
+\textit{b) a first quarter moon}\\
+
+Första kvarten (halvmåne, höger sida belyst) ca 7 dygn senare är synlig vid skymning
+
+\textit{c) a full moon}\\
+
+Fullmåne ca 7 dagar efter första kvarten vid solnedgången.
+
+\textit{d) a third quarter moon}\\
+Ca 7 dygn efter fullmånen är tredje kvarten(halvmåne med vänstra sidan belyst) och
+är synlig nära midnatt.
+
+
+
+\item \textit{5.5 For each of the following wavelengths, state whether it is in the radio, microwave,
+infrared, visible, UV, X-ray or gamma-ray portion of the EM-spectrum}
+
+\textit{a) 2.6 mikrometer}\\
+2600nm är långvågigt infrarött - FIR(Far Infra Red).\\
+\textit{b) 34 m}\\
+Radiofrekvens HF-bandet\\
+\textit{c) 0.54 nm}\\
+5.4 Ångström är Röntgenstrålning.\\
+
+\textit{d) 0.0032 nm}\\
+Gamma-strålning\\
+\textit{e) 0.62 mikrometer}\\
+620nm är gult ljus\\
+\textit{f) 310 nm}
+Ultraviolett ljus\\
+\textit{g) 0.012 m}
+Mikrovågor. X-band\\
+
+\item \textit{5.19 The bright star Bellatrix in the constellation Orion has surface temperature of 21 500 K.
+What is its wavelength of maximum emission in nanometers? What colour is this star?}\\
+
+Detta ges av Wiens förskjutningslag\footnote{\url{https://sv.wikipedia.org/wiki/Wiens_lag}}
+\begin{flalign*}
+\lambda_{max} &=\frac{b}{T}\text{ där}\\
+b&=0.00289776 \text{ m}\cdot\text{K}\\
+\lambda_{max} &=\frac{0.00289776}{21 500}=1.3478e-07m\\
+              &=134 \text{nm - UV-strålning}\\
+\end{flalign*}
+Denna måste uppfattas som violett-blå för nakna ögat.
+
+\item \textit{5.42 What is the Doppler effect? Why is it important to astronomers?}\\
+
+Antagandet är att ljusets hastighet är konstant för alla våglängder om en ljuskälla lyser mot en
+stillastående observatör men att att ljuset beter sig såsom ljudvågor t.ex. från en siren på ett utryckningsfordon
+som har högre ton (kortare våglängd) då fordonet närmar sig betraktaren och lägre ton
+(längre våglängd) då fordonet avlägsnar sig från betraktaren.
+Man kan se en förskjutning av maxima hos vätets emmissionsspektra exemplevis
+övergången från $n=3$ till $n=2$. Rydbergs formel ger att den emittterade strålningens
+våglängd är 656 nm. Om övergången detekteras såsom exempelvis 658 nm så måste det betyda
+att objektet avlägsnar sig.\\
+
+\item \textit{5.56 Use Starry Night to compare the brightness of two similarly sized stars in the
+constellation Auriga. The two stars Capella and Delta
+Aurigae are indicated in this view. Use the HUD to find the temperature and radius for both of these
+stars. Note that these two stars have the same radius but differ in temperature. From these data,
+which if these stars is intrinsically brighter and by what proportion (how much brighter)?}\\
+
+Listar de data Stellarium ger
+\begin{center}
+\begin{tabular}{ |c|c|c| } 
+ \hline
+\hspace{1em}      & Capella   	& $\delta$ \\ 
+ Magnitud         & 0.05  		& 3.7 \\ 
+ Absolut Magnitud & -0.54 		& 0.53 \\ 
+ Color Index (B-V)& 0.79 		& 1.01 \\ 
+ \hline
+\end{tabular}
+\end{center}
+Ju lägre Magnitud desto starkare uppfattas dess intensitet vara mätt från jorden\footnote{\url{https://en.wikipedia.org/wiki/Magnitude_(astronomy)}}.
+Användes formeln från Wikipedia som relaterar Magnituder $m$ med intensiteter $I$
+uppmätt i $\text{W}/\text{m}^2$ med insatta värden $m_1=0.05$ och $m_{ref}=3.7$ fås
+\begin{flalign*}
+m_1-m_{ref}&=-2.5\text{log}_{10}\Big(\frac{I_1}{I_{ref}}\Big)\iff\\
+10^{\frac{m_{ref}-m_1}{2.5}}&=\frac{I_1}{I_{ref}}\\
+\frac{I_1}{I_{ref}}&=10^{\frac{3.7-0.05}{2.5}}=28.4
+\end{flalign*}
+Vilket betyder att effekttätheten är 28.4 ggr större från Capella relativt $\delta$.\\
+
+Absolut Magnitud är refererat till dess verkliga intensitet och inte hur den uppfattas
+p.g.a. av att den befinner sig längre bort än referensstjärnan som jämförelsen görs emot.\\
+
+Capellas radie är $11.98 \pm 0.57$ gånger större än solens radie\footnote{\url{https://en.wikipedia.org/wiki/Capella}}.
+och radien hos $\delta$ är ca 11 ggr större än solens\footnote{\url{https://en.wikipedia.org/wiki/Delta_Aurigae}}
+
+
+Stellarium listar också det s.k. B-V indexet som ett mått på temeperaturen. En varm stjärna
+har ett B-V index nära 0 eller negativt värde medan en kall stjärna har ett B-V index närmare 2.\\
+
+
+\item \textit{5.57. Use Starry Night to examine several different celestial objects and consider the type of
+spectrum you would expect each object to radiate.
+For each object, decide whether you think it will have a continuous, absorption line, or emission
+line spectrum, and explain your reasoning.
+(Tips – keep in mind that the light coming from a galaxy is the combined light of hundreds of
+billions of stars, and that moonlight is simply re ected sunlight. You may want to consult Figure
+5-17 in the book, and read about Kirchhoff’s Laws.)}\\
+
+Förväntan är att ljuset från Andromeda har ett kontiniuerligt spektrum men eftersom Andromeda är så långt bort
+så är sannolikheten stor att det finns kalla partikel moln\footnote{Observing Emission/Absorption Lines in Astronomy,\url{https://www.youtube.com/watch?v=lPDY5jiBxJk}} som ljuset passerar på väg till jorden vilket ger
+upphov till excitation och absorption där absorption är dominerande eftersom emission kan ske ialla riktningar.
+Ljuset från månen är samma bredbandiga ljus som når jorden. Eftersom månen uppfattas som vit så innebär det
+att månens yta har ungefär samma reflektionskoefficient för samtliga frekevenser i det optiska spektrat.
+
+M8 galaxen har klassificerats som en emissions galax och en HII-region\footnote{\url{https://en.wikipedia.org/wiki/Lagoon_Nebula}} vilket betyder att det finns
+mycket joniserat väte uppenbarligen förväntas ett emissionsspektrum i från vätet.
+
+Att fotografier av M8 blir rosafärgade innebär att effekttätheten är högst omkring 700nm.\\
+
+
+
+
+
+\item \textit{7.46. Use Starry Night to examine images of the
+terrestrial major planets: Mercury, Venus, Earth
+and Mars, and also the dwarf planet Ceres.}\\
+
+\textit{(a) Describe each planet’s appearance. From what you observe in each case, is there any way of
+knowing whether you are looking at a planet’s surface or at complete cloud cover of the planet?}\\
+
+Avseende om man verkligen ser en planets yta eller ett gasmoln täckandes ytan så borde kriteriet vara
+om man ser ojämnheter såsom kratrar eller ej.
+ Ett homogent gasmoln som täcker en yta bör ge planeten ett jämnt
+bollformat utseende.\\
+
+Merkurius ser gåare ut än månen och från fotgrafiet ser det inte ut att vara några gasmoln på ytan som ser 
+ut att vara solid och ha många kratrar.\\
+
+Venus ser ut att ha en gasformig yta eftersom inga meteornedslag är synliga inga ojämnheter
+som karaktäriserar en en solid kropp. Enligt Wikipedia så har den en atmosfär av svavelsyra ångor
+\footnote{\url{https://en.wikipedia.org/wiki/Venus}}\\
+
+Av den jämna rundheten att döma och de olika färgerna så bör en utomjordisk betraktare
+kunna dra slutsatsen att jorden har en atmosfär\\
+
+Mars har kratrar och polarisar. Av polarisarna att döma så borde Mars åttminstone ha en vattenånga
+såsom atmosfär. Wikipedia\footnote{\url{https://en.wikipedia.org/wiki/Atmosphere_of_Mars}} beskriver att
+Mars har en atmosfär bestående av 95\% Koldioxid, 2.8\% Kväve och 2\% Argon samt spår av vattenånga, syre, kolmonoxid
+väte och ädelgaser.\\
+
+Ceres yta verkar ha extremt många kratrar.\\
+
+
+
+\textit{(b) Which planet or planets have clouds?}\\
+
+Endast vår jord har moln i enlighet med gängse betydelse av ordet medan hela Venus ser ut att vara täckt
+av ett enda moln som täcker hela planetens yta.\\
+
+
+\textit{(c) Which of these selected planets shows the heaviest cratering?}\\
+
+Anser att Ceres såg mest ``misshandlad'' ut.\\
+
+\textit{(d) Do any of these planets show evidence of liquid water in the planet’s surface today? Do any
+show evidence of liquid water on the surface in ancient times}\\
+
+Mars har is vid sina poler och har även spår av floder vilket på engelska benämns ``outflow channels'\footnote{\url{https://en.wikipedia.org/wiki/Outflow_channels}}\\
+
+
+\textit{(e) What do you notice about Venus’s rotation compared to the rotation of the other planets}\\
+
+Verkar lite oklart vad som skiljer. Egenrotationsperioden är riktigt långsam t.o.m långsammare än dess rotation
+kring solen. Listar Siderealt år -SÅ, Sidreal dag -SD.
+\begin{center}
+\begin{tabular}{ |c|c|c| } 
+ \hline
+\hspace{1em}       &SÅ(dagar)   	& SD     	\\ 
+ Merkurius         & 87.97 			& 1407h30m	\\ 
+ Venus             & 224.7 			&5832h28m 	\\ 
+ Jorden (B-V)	   & 365.25 		& 23h56m    \\ 
+ Mars              &686.97			&24h37m		\\
+ Ceres			   &1682.19			&           \\
+ \hline
+\end{tabular}
+\end{center}
+
+
+\item \textit{7.47. Use Starry Night to examine the gas giant planets Jupiter, Saturn, Uranus, and
+Neptune}\\
+\textit{(a) Which plant shows the greatest color contrasts in its cloudtops?}\\
+
+Jupiters gasmoln har hög kontrast som måste bero på olika gassammansättningar. Dessa borde väl ha blandats
+ut mer efter så lång tid till en mer homogen blandning med avseende på Termodynamikens andra huvudsats kan man väl tycka.
+Varför är Jupiter så kontrastrik?\\
+
+\textit{(b) Which planet has the least color contrast in its cloudtops?}\\
+
+Uranus är mest homogen avseende färgen.\\
+\textit{(c) What can you say about the thickness of Saturn’s rings compared to their diameter?}\\
+
+De störstaringarna benämns innifrån och ut D, C, B och A. Mittenringarna C och B har störst bredd\footnote{\url{https://en.wikipedia.org/wiki/Rings_of_Saturn\#Major_subdivisions}}\\
+
+\textit{(d) Which planet’s axis is most inclined (lutad) to its orbital plane?}\\
+
+Saturnus lutar mest - $2.485^\circ$ mot ekliptikan.\\
+
+\item \textit{16.65 Use Starry Night to examine simulations of various features that appear on the
+surface of the Sun}.
+
+\textit{(a) Which layer of the Sun’s atmosphere is shown in this part of the simulation?}
+Gissar på chromosfären eftersom jag inte har tillgång till Starry Nights under Linux och Chrmosfären skall vara
+synlig.
+
+\textit{(b) List the different features that are visible in this view of the Sun’s surface, zooming in if
+necessary to examine the details of this surface.}\\
+Koronan är synlig i det synliga spektrat och chromosfären såsom ett absorptionsspektrum men inte fotosfären vars synliga ljus absorberas på vägen ut.\\
+
+
+\textit{(c) Select Favourites > Explorations > Chromosphere to see and view from the “surface” of the
+Sun. Use the view controls to look around this view. This simulated view of the chromosphere is at
+the color of the wavelength of hydrogen light. The opacity of the gas at this wavelength means that
+you can see thee structure of the hos chromosphere that lies above the visible surface. Provide a
+detailed description of the various features visible in this simulation of the Sun’s surface.}
+
+
+Kan ej utföra denna utan Starry Nights.\\
+
+
+
+\item \textit{16.66 Use Starry Night to measure the Sun’s rotation to display the Sun as seen from about 0.008 au above its surface, well inside the orbit of
+Mercury. Use the time controls to stop the Sun’s rotation at a time when a line of longitude on the
+Sun makes a straight line between the solar poles, preferably a line crossing a recognisable solar
+feature. Note the date and time and then use the time- ow controls to adjust the date and time to
+place this selected meridian in this position again.}\\
+
+Solen har en sidreal egenrotation av 25.05 dagar vid dess ekvator
+25.38 dagar latitud $16^\circ$ och 34.4 dagar vid polerna.\\
+
+\textit{(a) What is the rotation rate of the Sun as shown in Starry Night? This simulation does not
+show on important feature of the Sun, namely its differential rotation, where the equator of this uid
+body rotates faster than the polar regions.}\\
+
+Kan ej utföra denna.\\
+
+\textit{(b) To which region of the real Sun does your measured rotation rate refer? In the real Sun, its
+differential rotation is thought to generate the magnetic elds and active regions that make the Sun
+an active star. Occasional emission of high-energy particles from these active regions can disturb
+the Earth’s environment and disrupt electrical transmission systems (sk. solstormar)}\\
+
+Gissar att Starry Nights har implementerat solens rotationstid vid dess ekvator dvs 25 dagar.\\
+
+\textit{(c) Compare this simulated image of the Sun with real images in your textbook or on the
+internet. In particular, how does the distribution of sunspots and active regions in this
+simulation compare to the distribution of these regions in the real Sun?}
+
+Skriver lite om solfläckar som alternativ till frågan eftersom jag inte kan använda Starry Nights.
+
+Mängden solfläckar följer approximativt en 11 års cykel\footnote{\url{https://en.wikipedia.org/wiki/Sunspot}}\\
+Dessa är regioner av förhöjt magnetiskt flöde vilket dämpar värmekonvektion och får dessa fläckar 
+därför att erhålla en lägre temperatur är omgivande regioner.
+Solfläcken paras ofta med en närliggande region av motsatt magnetisk polaritet.
+Indviduella solfläckar och grupper av solfläckar kan bestå allt ifrån några dagar till några månader
+men klingar alltid av och försvinner.\\
+
+Solfläckarna är alltid en indikation på intensiv magnetisk aktivitet och är orsaken till laddade partiklar skjuts
+ut i s.k. ``solstormar''  som förorsakar elektromagnetiska pulser här på jorden som kan vara så kraftiga att dessa slår ut
+elnätet. Den hittills starkaste solstormen vi känner till inträffade 1859\footnote{\url{https://en.wikipedia.org/wiki/Carrington_Event}}\\
+1989 slog en solstorm ut Quebecs elnät\footnote{\url{https://en.wikipedia.org/wiki/March_1989_geomagnetic_storm}}
+
+Pulsen verkar förorsakas när källan till magnetfältet plötsligt stoppas\footnote{\url{https://www.youtube.com/watch?v=7nkC8SXzHls}}
+i så fall är det precis samma fenomen som när man hastigt bryter strömmen till en spole, magnetfältet
+vill inte kollapsa momentant så magnetfältet höjer spänningen och sådant att luften joniseras och en strömförande
+ljusbåge bildas ofta går säkringen om den är underdimensionerad.
+Om samma slags ledningsväg bryts från solens inre till dess yta så kommer laddade partiklar att
+skjutas ut för att förhindra magnetfältets kollaps.
+ En solstorm är i så fall ingenting annat än en ``induktiv kick''.
+
+
+
+
+ 
+
+\end{enumerate}
+
+
+%\underbrace{}
+
+% \hspace{1em}
+
+%\begin{enumerate}[label=(\alph*)]
+%\end{enumerate}
+
+%$$
+%  A = 
+%  \begin{bmatrix}
+%    1 & 0  & 2i\\
+%    2i & 0 &  -4\\
+%    -i &  0 & -2i\\
+%  \end{bmatrix}
+%$$
+
+%\begin{flalign*}
+%  A = 
+%  \begin{bmatrix}
+%    1 & 0  & 2i\\
+%    2i & 0 &  -4\\
+%    -i &  0 & -2i\\
+%  \end{bmatrix}
+%\end{flalign*}
+
+
+%\begin{flalign*}
+%\psi(x) = \begin{cases} Ae^{ikx}+Be^{-ikx} &\ \  x<-a \\
+%                        Ce^{\kappa x}+De^{-\kappa x} &\ \ -a < x < a\\
+%						Fe^{ikx} & \ \ x>a
+%       \end{cases}
+%\end{flalign*}
+%[width=80mm,scale=0.7]
+%\begin{figure}[H]
+%  \includegraphics[width=\linewidth]{odd_finite.eps}
+%  \caption{$z_0=0.1\pi,0.5\pi, 3\pi,7\pi$}
+%  \label{fig4}
+%\end{figure}
+\end{document}
+
+
+
+
+
+
+
+
+
+
+
+
+                                     
+                                     
+
+
+
