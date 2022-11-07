@@ -10,13 +10,16 @@
 \usepackage[utf8]{inputenc}
 %\usepackage{geometry}   % Setup for page and paper dimensions
 \usepackage{wrapfig}
-\usepackage{subfigure}
+%\usepackage{subfigure}
+%\usepackage{caption}
+%\captionsetup{
+%  font=small,
+%  labelfont=bf,
+%  tableposition=top
+%}
+\usepackage[inkscapeformat=png]{svg}
 \usepackage{caption}
-\captionsetup{
-  font=small,
-  labelfont=bf,
-  tableposition=top
-}
+\usepackage{subcaption}
 \usepackage{float}
 \usepackage[swedish]{babel}
 \usepackage{hyperref}
@@ -31,7 +34,8 @@
 \usepackage{enumitem}
 \usepackage{verbatimbox}
 \usepackage{fancyvrb}
-\usepackage{graphicx}   
+\usepackage{graphicx} 
+\usepackage{animate}
 \usepackage{lipsum}  
 \usepackage[leqno]{amsmath}
 \usepackage{listings} 
@@ -70,7 +74,7 @@
     $\star\star\star$
   \end{center}}
 
-\title{Grundläggande Astronomi Inlämningsuppgift 3\\}
+\title{Grundläggande Astronomi Labb Stellarium\\}
 \author{Lasse Karagiannis}
 \date{\today} % Activate to display a given date or no date (if empty),
          % otherwise the current date is printed 
@@ -83,10 +87,11 @@
 \WarningFilter{latex}{Text page}
 \usepackage{subfiles}
 \begin{document}
-%\begin{titlepage}
-%\maketitle
-%\end{titlepage}
-%\newpage
+\begin{titlepage}
+\maketitle
+\end{titlepage}
+\tableofcontents
+\newpage
 %\begin{multicols}{2}
 
 %\maketitle
@@ -94,7 +99,8 @@
 %\subfile{i2.tex}
 %\subfile{i3.tex}
 %\subfile{i4.tex}
-\subfile{Stegen.tex}
+%\subfile{Stegen.tex}
+\subfile{StellariumLabb.tex}
 
 %\end{multicols}
 \end{document}
